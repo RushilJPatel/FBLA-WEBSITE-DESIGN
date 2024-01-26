@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Horizons Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="Official/Green_Horizons_Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">PROJECTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <a href="donation.html" class="hero-btn">Donate Now</a>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>EcoGlow: Illuminating Paths to <br> Environmental Stewardship</h1>
+</section>
+
+<!-- Gala -->
+<section class="gala">
+
+    <h1>You are invited to our 2023 Gala</h1>
+    <div class="row">
+        <div class="three-col">
+            <h3>Environmental Conservation</h3>
+            <p>At our gala, we champion the preservation of our planet. Join us in supporting initiatives that protect ecosystems, combat climate change, and foster sustainable practices for a greener, healthier future</p>
+        </div>
+        <div class="three-col">
+            <h3>Community Empowerment</h3>
+            <p>Our gala stands for empowering communities. Together, we strive to provide education, resources, and opportunities that empower individuals and foster thriving, sustainable communities.</p>
+        </div>
+        <div class="three-col">
+            <h3>Sustainable Development</h3>
+            <p>At the heart of our gala is a commitment to sustainable development. Join us in advocating for a future where economic growth harmonizes with environmental preservation and social equity, ensuring a better world for generations to come.</p>
+        </div>
+    </div>
+    <h1>Reviews</h1>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+
+    <div class="row-big">
+        <div class="testimonial-col">
+            <img src="eduford_img/user1.jpg">
+            <div>
+                <p>The gala was an incredible experience! The event was well-organized, and the ambiance was delightful. I appreciated the emphasis on sustainability and the engaging activities. However, I felt there could have been more diversity in the program. Overall, a fantastic evening supporting a worthy cause</p>
+                <h3>Christine Berkley</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="eduford_img/user2.jpg">
+            <div>
+                <p>What an amazing gala! The attention to detail was impeccable, from the decor to the engaging speakers. The event seamlessly blended entertainment with the purpose of supporting environmental conservation. The only thing that could have made it perfect would have been a wider range of interactive exhibits. Nonetheless, an exceptional event for a vital cause!</p>
+                <h3>David Byer</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+    <div class="button-hub">
+        <a href="https://azure-lorie-81.tiiny.site" target="_blank" class="hero-btn red-btn">Important Information</a>
+        <a href="sign-up.html" class="hero-btn red-btn">Sign-Up Now</a>
+    </div>
+</section>
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Website Made By Green Horizons Foundation</h4>
+    <p>Made for the purposes of the FBLA 2023-24 Website Design Competition</p>
+    <!-- <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div> -->
+</section>
+
+<!------------- JS Toggle for small media ------------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+
+
+</script>
+
+</body>
+</html>

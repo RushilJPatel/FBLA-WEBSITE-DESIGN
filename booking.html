@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Horizons Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="Official/Green_Horizons_Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">PROJECTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <a href="donation.html" class="hero-btn">Donate Now</a>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Booking Form</h1>
+</section>
+
+    <style>
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+        }
+        form div {
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+        }
+        form label {
+          font-weight: bold;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"],
+        form select,
+        form input[type="date"] {
+          padding: 10px;
+          font-size: 16px;
+          width: 300px;
+          border-radius: 5px;
+          border: 1px solid gray;
+          margin-top: 10px;
+        }
+        form input[type="submit"] {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border-radius: 5px;
+          border: none;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+        .error {
+          color: rgb(199, 33, 33);
+          font-size: 14px;
+          margin-top: 10px;
+        }
+        .booking-instructions{
+            text-align: center;
+            font-size: 12px;
+        }
+      </style>
+    <form id="space-flight-form">
+      <form>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="flightType">Service Oppurtunity:</label>
+        <select id="flightType" name="flightType" required>
+          <option value="">Select A Service Oppurtunity</option>
+          <option value="suborbital">Nature Restoration Day</option>
+          <option value="orbital">Sustainable Living Workshops</option>
+          <option value="missionBased">Environmental Education Outreach</option>
+        </select>
+        
+        <label for="departureDate">Date You Are Free:</label>
+        <input type="date" id="departureDate" name="departureDate" required>
+        
+        <input type="submit" value="Submit" name="submit">
+      </form>
+      <!-- Add an error message container -->
+      <div class="error" id="error-message"></div>
+    </form>
+    <section class="booking-instructions">
+        You will be emailed with booking instructions once we recieve this form.
+    </section>
+    <script>
+      // Add form validation logic using JavaScript
+      const form = document.getElementById("space-flight-form");
+      form.addEventListener("submit"), function(event) {
+       
+      }
+      </script>
+<!------ Footer ------>
+
+<section class="footer">
+  <h4>Website Made By Green Horizons Foundation</h4>
+  <p>Made for the purposes of the FBLA 2023-24 Website Design Competition</p>
+  <!-- <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+  </div> -->
+</section>
+
+<!------------- JS Toggle for small media ------------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+
+
+</script>
+
+</body>
+</html>

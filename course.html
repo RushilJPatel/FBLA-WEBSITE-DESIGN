@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Horizons Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="Official/Green_Horizons_Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">PROJECTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <a href="donation.html" class="hero-btn">Donate Now</a>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Projects & Services</h1>
+</section>
+
+<!------- Courses ------->
+
+<section class="course">
+    <h1>Our Projects</h1>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+
+    <div class="row">
+        <div class="three-col">
+            <h3>Green Schools Initiative</h3>
+            <p>Partnering with local schools to implement eco-friendly practices, promote environmental education, and create sustainable learning environments. This project aims to reduce waste, conserve resources, and instill a culture of sustainability among students and staff.</p>
+        </div>
+        <div class="three-col">
+            <h3>Community Garden Program</h3>
+            <p>Establishing and supporting community gardens in urban areas to promote local food production, improve access to fresh produce, and educate communities about sustainable gardening practices. This project fosters community engagement, food security, and environmental stewardship.</p>
+        </div>
+        <div class="three-col">
+            <h3>Riverside Cleanup and Restoration</h3>
+            <p>Organizing regular cleanup events along riversides or waterways to remove plastic waste, restore habitats, and raise awareness about the importance of preserving water ecosystems. This project involves community volunteers, local organizations, and educational outreach to address water pollution and protect aquatic environments.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Project Type -->
+
+<section class="facilities">
+    <h1>Service Oppurtunities</h1>
+    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> -->
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="Official/restoration day.jpg">
+            <h3>Nature Restoration Day</h3>
+            <p>Join us for a Nature Restoration Day! Be a part of revitalizing local habitats as we plant native species, remove invasive plants, and restore the natural beauty of our parks and nature reserves. Together, we'll make a direct impact on ecosystem health and biodiversity, creating a healthier environment for all.</p>
+            <a href="booking.html" class="hero-btn red-btn">Sign-Up Now</a>
+        </div>
+        <div class="facilities-col">
+            <img src="Official/workshop.jpg">
+            <h3>Sustainable Living Workshops</h3>
+            <p>Discover sustainable living with our engaging workshops! Learn practical skills like composting, waste reduction, energy conservation, and sustainable gardening. Empower yourself to make a positive environmental impact right from your home. Join us to embrace a more eco-friendly lifestyle.</p>
+            <a href="booking.html" class="hero-btn red-btn">Sign-Up Now</a>
+        </div>
+        <div class="facilities-col">
+            <img src="Official/1694537420189.jpeg">
+            <h3>Environmental Education Outreach</h3>
+            <p>Join our environmental education outreach programs! Engage with interactive sessions, presentations, and hands-on activities designed to educate and inspire. Whether in schools or community centers, together, we'll raise awareness about environmental issues and empower individuals to protect our planet.</p>
+            <a href="booking.html" class="hero-btn red-btn">Sign-Up Now</a>
+        </div>
+    </div>
+
+
+</section>
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Website Made By Green Horizons Foundation</h4>
+    <p>Made for the purposes of the FBLA 2023-24 Website Design Competition</p>
+    <!-- <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div> -->
+</section>
+
+<!------------- JS Toggle for small media ------------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+
+
+</script>
+
+</body>
+</html>

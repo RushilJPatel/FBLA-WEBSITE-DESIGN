@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Horizons Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="Official/Green_Horizons_Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">PROJECTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <a href="donation.html" class="hero-btn">Donate Now</a>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Renewable Energy</h1>
+</section>
+
+<!-- blog page content -->
+
+<section class="blog-content">
+
+    <div class="row">
+        <div class="blog-left">
+            <img src="Official/renew 2.jpg">
+            <h2>Renewable Energy Innovations Shaping the Future</h2>
+            <p>In the quest for a sustainable future, renewable energy innovations stand as beacons of hope, driving a profound transformation in the global energy landscape. Technologies harnessing renewable sources like solar, wind, and hydroelectric power are revolutionizing how we generate and consume energy.</p>
+            <br>
+            <p>Solar power, perhaps the most visible among renewable energies, continues to advance with breakthroughs in photovoltaic technology and efficient solar panels. From sprawling solar farms to rooftop installations, solar energy is becoming increasingly accessible and cost-effective, offering clean and abundant power.</p>
+            <br>
+            <p>Wind energy is soaring to new heights, quite literally, with advancements in wind turbine design and efficiency. Offshore wind farms capitalize on strong, consistent winds, while onshore turbines harness the power of the breeze. These innovations underscore wind energy's potential to meet significant portions of our electricity needs.</p>
+            <br>
+            <p>Hydroelectric power, a long-established renewable energy source, continues to evolve with innovative dam designs and hydrokinetic technologies. From traditional dams to small-scale hydroelectric projects, water's kinetic energy is being harnessed more efficiently and sustainably.</p>
+            <br>
+            <p>Beyond these frontiers, emerging technologies like tidal and geothermal energy offer promising avenues for clean power generation. Tidal energy exploits the ebb and flow of tides, while geothermal taps into the Earth's heat, both offering reliable and renewable sources of energy.</p>
+            <br>
+            <p>The future of energy lies in a diverse mix of renewable sources, coupled with energy storage and smart grid technologies. This shift toward renewables not only mitigates climate change but also fosters energy independence, drives economic growth, and creates a cleaner and more sustainable world for generations to come. As these innovations continue to unfold, the transition to a renewable energy powered future becomes increasingly feasible and essential for a sustainable planet.</p>
+            <br>
+            <a href="cite.html" class="hero-btn red-btn ">Citations</a>
+        </div>
+        <div class="blog-right">
+            <h3>Blog Posts</h3>
+            <div>
+                <span><a href="Sustainable_Agriculture.html">Sustainable Agriculture</a></span>
+                <span>11/2/2023</span>
+            </div>
+            <div>
+                <span><a href="Plastic_Ocean.html">Plastic Pollution</a></span>
+                <span>11/4/2023</span>
+            </div>
+            <div>
+                <span><a href="Importance_Biodiversity.html">Biodiversity Conservation</a></span>
+                <span>11/7/2023</span>
+            </div>
+            <div>
+                <span><a href="Green_transpo.html">Green Transportation</a></span>
+                <span>11/10/2023</span>
+            </div>
+            <!-- <div>
+                <span><a href="Renewable_Energy.html">Renewable Energy</a></span>
+                <span>11/16/2023</span>
+            </div> -->
+            <div>
+                <span><a href="blog.html">Environmental Deterioration</a></span>
+                <span>11/18/2023</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-box">
+
+        <h3>Leave a comment</h3>
+        <form class="comment-form">
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter Email">
+            <textarea rows="5" placeholder="Your Comment"></textarea>
+            <button type="submit" class="hero-btn red-btn">Post Comment</button>
+        </form>
+    </div>
+    
+</section>
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Website Made By Green Horizons Foundation</h4>
+    <p>Made for the purposes of the FBLA 2023-24 Website Design Competition</p>
+    <!-- <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div> -->
+</section>
+
+
+
+<!------------- JS Toggle for small media ------------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+
+
+</script>
+
+</body>
+</html>

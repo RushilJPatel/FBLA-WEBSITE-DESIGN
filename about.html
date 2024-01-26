@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Horizons Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="Official/Green_Horizons_Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">PROJECTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <a href="donation.html" class="hero-btn">Donate Now</a>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+</section>
+
+<!--------- About Us Content --------->
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest environmental conservation group</h1>
+            <p>Green Horizons Foundation embodies a passionate commitment to safeguarding our planet's future. Founded on the principles of environmental preservation, our mission is profound: to protect and nurture ecosystems through community engagement, education, and sustainable practices. We envision a world where nature flourishes hand in hand with thriving communities, where environmental consciousness becomes intrinsic to daily life.
+                <br>
+                <br>
+            Our approach is multifaceted yet interconnected. We engage communities, empower individuals, and restore vital habitats. From fostering community participation to advocating for sustainable living, our initiatives cultivate a holistic impact. We champion environmental stewardship through collaborative efforts and innovative programs, ensuring a sustainable legacy for generations to come.
+                <br>
+                <br>
+            At Green Horizons Foundation, we're more than an organization; we're a global movement. Our team comprises dedicated experts, volunteers, and partners united by a common purpose - catalyzing change. Together, we lead by example, striving to create a greener, more resilient world. Join us on this journey toward environmental harmony and sustainability, where every action contributes to a profound and lasting impact. </p>
+            <a href="gala.html" class="hero-btn red-btn">VISIT US AT OUR GALA</a>
+        </div>
+        <div class="about-col">
+            <img src="eduford_img/about.jpg">
+        </div>
+    </div>
+
+</section>
+
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Website Made By Green Horizons Foundation</h4>
+    <p>Made for the purposes of the FBLA 2023-24 Website Design Competition</p>
+    <!-- <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div> -->
+</section>
+
+<!------------- JS Toggle for small media ------------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+
+
+</script>
+
+</body>
+</html>

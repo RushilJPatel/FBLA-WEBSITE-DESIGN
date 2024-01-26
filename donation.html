@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Horizons Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="Official/Green_Horizons_Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">PROJECTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <a href="donation.html" class="hero-btn">Donate Now</a>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Donation Form</h1>
+</section>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        form {
+            margin-top: 50px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="number"] {
+            padding: 8px;
+            margin-bottom: 20px;
+            width: 200px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .donate-form{
+            margin-top: 20px;
+        }
+    </style>
+<section class="donate-form">
+    <h1>Support Our Cause - Donate Now</h1>
+    <form>
+        <label for="donation_amount">Enter Donation Amount:</label>
+        <input type="number" id="donation_amount" name="donation_amount" min="1" step="any" placeholder="Enter amount" required><br><br>
+        <button onclick="submitForm()">Donate</button>
+    </form>
+</section>
+
+<section class="footer">
+    <h4>Website Made By Green Horizons Foundation</h4>
+    <p>Made for the purposes of the FBLA 2023-24 Website Design Competition</p>
+    <!-- <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div> -->
+</section>
+
+    <script>
+        function submitForm() {
+            const donationAmount = document.getElementById("donation_amount").value;
+            alert(`Thank you for your donation of $${donationAmount}. Your support means a lot to us! (This is a theoretical website; no actual payments will be processed)`);
+        }
+    </script>
+</body>
+</html>
